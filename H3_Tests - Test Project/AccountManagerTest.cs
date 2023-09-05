@@ -13,7 +13,7 @@ namespace H3_Tests___Test_Project
     {
         #region Withdraw Tests
         [Fact]
-        public async void Withdraw_CardIsNullShouldFail()
+        public async void Withdraw_CardIsNullShouldThrow()
         {
             using (var mock = AutoMock.GetLoose())
             {
@@ -86,7 +86,7 @@ namespace H3_Tests___Test_Project
 
         #region Deposit Tests
         [Fact]
-        public async void Deposit_CardIsNullShouldFail()
+        public async void Deposit_CardIsNullShouldThrow()
         {
             using (var mock = AutoMock.GetLoose())
             {
